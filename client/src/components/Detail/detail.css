@@ -1,0 +1,286 @@
+.allPage {
+    background-image: url('https://cdn.discordapp.com/attachments/986703536811278446/992436854446112898/bg-01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+    z-index: 1; 
+}
+
+.allDetail {
+    margin-top: 60px;
+}
+
+.title-lists-top-detail {
+    background-color: rgba(15, 15, 15, 0.979);
+    padding: 1em 2em 2em 2em;
+    width: max-content;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+}
+
+.name {
+    text-decoration: underline #c7a94b;
+    border: 1px solid white;
+    color: white;
+    cursor: default;
+    border-radius: 1em;
+    width: max-content;
+    padding: 0.6em;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerImgList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+.image  {
+    width: 500px;
+    height: 250px;
+    margin: 1em;
+}
+
+.listDetail1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 6rem;
+    align-items: flex-start;
+}
+
+.listDetail2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 6rem;
+    align-items: flex-start;
+}
+
+.titleList{
+    font-weight: bold;
+    margin-left: 0;
+}
+.titleList:hover{
+    color: #c7a84b;
+    cursor:default;
+    transition: 0.3s;
+}
+
+.divsListDetail{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-image-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-title-library {
+    display: flex;
+    justify-content: center;
+    background-color: #c7a84b;
+    color: black;
+    margin: 1em;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 0.5rem;
+}
+
+.button-title-library:hover{
+    background-color: #1a83ff;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.button-in-library {
+    font-weight: 2em;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 0.5rem;
+    border: none;
+}
+
+.button-library-icon {
+    align-self: center;
+    font-size: 1.2em;
+    justify-content: flex-start;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.buttonAddWishList {
+    background-color: #c7a84b;
+    color: black;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 0.5rem;
+    border: none;
+}
+.buttonAddWishList:hover{
+    background-color: rgb(1, 165, 1);
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.buttonDeleteWishList {
+    background-color: #c7a84b;
+    color: black;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 0.5rem;
+    border: none;
+}
+.buttonDeleteWishList:hover{
+    background-color: rgba(196, 1, 1, 0.795);
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.buttonCart{
+    background-color: #c7a84b;
+    color: black;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 0.5rem;
+    border: none;
+}
+.buttonCart:hover{
+    background-color: #1a83ff;
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.buttonBuy{
+    background-color: #c7a84b;
+    color: black;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 0.5rem;
+    border: none;
+}
+.buttonBuy:hover{
+    background-color: #1a83ff;
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#onSale {
+    color: yellowgreen;
+}
+
+.tagH4{
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: default;
+    display: inline-block;
+    background-color: rgba(15, 15, 15, 0.979);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.tag{
+    font-size: medium;
+    margin: 0 9rem ;
+    color: white;
+    background-color: rgba(15, 15, 15, 0.979);
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+}
+
+.descriptionH3{
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: default;
+    display: inline-block;
+    background-color: rgba(15, 15, 15, 0.979);
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+.description{
+    margin: 0 10em;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    color: white;
+    background-color: rgba(15, 15, 15, 0.979);
+}
+
+.screenshots{
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+}
+
+.requirementsH3 {
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: default;
+    display: inline-block;
+    background-color: rgba(15, 15, 15, 0.979);
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.requirements{
+    margin: auto;
+    width: max-content;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: rgba(15, 15, 15, 0.979);
+}
+
+.all_comments{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carouselcontainer-detail {
+
+    margin: 2em 0.7em 0;
+    padding-top: 2em;
+    background-color: rgba(0, 0, 0, 0.846);
+    border-radius: 2em;
+}
+
+.loadingDetail{
+    justify-content: center;
+    align-content: center;
+    margin-top: 36vh;
+  }

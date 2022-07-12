@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+.lf-body-login {
+    background-color: #fff;
+    background-image: url(https://cdn.discordapp.com/attachments/986703536811278446/992436854446112898/bg-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    justify-content: center;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;   
+}
+
+.lf-login-component {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 15em;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    height: 40em;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    margin-left: auto;
+    margin-top: 8vh;
+}
+
+.lf-left-container {
+    grid-column-start: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    background: rgb(245, 230, 145);
+    background-color: black; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #fff;
+}
+
+.lf-right-container {
+    background: rgb(245, 230, 145);
+    background: -webkit-linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+    background: linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+}
+
+.lf-h1 {
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.lf-h2 {
+    text-align: center;
+}
+
+.lf-p {
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 15px;
+}
+
+.lf-span {
+    font-size: 12px;
+}
+
+.lf-a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.lf-button {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 1rem;
+}
+
+.lf-button:active {
+    transform: scale(0.95);
+}
+
+.lf-button:hover {
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.6s;
+}
+
+.buttonAdmin{
+    color: black;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+.buttonAdmin:hover{
+    background: -webkit-linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+    background: linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.linkAdmin {
+    margin-top: 5rem;
+}
+
+
+.lf-button-leftside {
+    border-radius: 20px;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.lf-button-leftside:active {
+    transform: scale(0.95);
+}
+
+.lf-button-leftside:hover {
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+    background: linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+    transition: 0.5s;
+}
+
+.lf-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.lf-input {
+    /* background-color: rgb(0, 0, 0); */
+    color: black;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 2em;
+}
+
+.lf-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    bottom: 0;
+}
+
+.lf-link:hover {
+    color: #413f3f;
+}
+
+.lf-select {
+    padding: 0.3em;
+    border-radius: 2em;
+    margin: 1em;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+
+}
+
+.lf-button-guest {
+    border-radius: 20px;
+    /* border: 1px solid #1a83ff; */
+    background-color: #1a83ff;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+
+.lf-button-guest:hover {
+    outline: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    background: -webkit-linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+    background: linear-gradient(to right, rgb(245, 230, 145), rgb(181, 166, 83));
+}
+
+.GoogleButton{
+    margin-top: 1rem;
+}
+
+.errorsLog{
+    color: rgba(255, 58, 58, 0.952);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 10px 0;
+}
+
+.lf-button-recovery {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    color: rgb(159, 27, 27);
+    font-size: 10px;
+    font-weight: bold;
+    padding: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 1rem;
+}
+
+.lf-button-recovery:hover {
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(159, 27, 27);
+    border: 1px solid rgb(159, 27, 27);
+    transition: 0.6s;
+}

@@ -1,0 +1,335 @@
+.navbar {
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 4em;
+    z-index: 9999; 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position:fixed;
+    
+}
+
+.NavBar-left {
+    display: flex;
+    flex-basis: 50%;
+    margin-left: 2.5rem;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-left-icons {
+    margin-right: 0.3rem;
+    font-size: 1.5rem;
+    background: none;
+    justify-items: flex-start;
+    margin-left: 3rem;
+}
+
+.navleft-text {
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navleft-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+.left-sections {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    text-decoration: none;
+}
+
+.NavBar-center {
+    flex-basis: 30%;
+}
+
+.NavBar-right {
+    flex-basis: 20%;
+    text-align: end;
+}
+
+.henrygames-logo {
+    display: flex;
+    height: 45px;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar-icons {
+    margin-right: 3rem;
+    font-size: 2rem;
+    background: none;
+    justify-items: flex-end;
+}
+
+.menu-cross :hover {
+    background-color: #1a83ff;
+    border-radius: 4px;
+}
+
+.side-menu {
+    background-color: #151414;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 8000;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+span {
+    margin-left: 1em;
+}
+
+.side-menu.active {
+    right: 0;
+    transition: 350ms;
+    padding: 0;
+    width: 250px;
+}
+
+#navbar-side-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    margin: 0.5em;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 16px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+.nav-text a:hover {
+    background-color: #1a83ff;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5em;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    list-style: none;
+    height: 60px;
+    /* align-content: flex-end; */
+    /* width: 85%; */
+}
+
+#navbar-side-items .bottom-text {
+    justify-self: flex-end;
+}
+
+.bottom-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 16px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+.bottom-text a:hover {
+    background-color: #1a83ff;
+}
+
+.numC {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-decoration: none;
+}
+
+.sidebar-toggle {
+    background-color: #060b26;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.side-menu-items {
+    width: 100%;
+    margin-top: 4em;
+}
+
+
+
+/* PRUEBA */
+
+.bottom-text-first {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    list-style: none;
+    margin: 0.5em;
+    height: 60px;
+    /* align-content: flex-end; */
+    /* width: 85%; */
+}
+
+#navbar-side-items .bottom-text-first {
+    justify-self: flex-end;
+}
+
+.bottom-text-first a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 16px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+.bottom-text-first a:hover {
+    background-color: #1a83ff;
+}
+
+
+/* SIGN UP BUTTON */
+
+.sign-up-button {
+    display: flex;
+    margin: 0.5em;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    list-style: none;
+    height: 60px;
+    border: 2px;
+    /* align-content: flex-end; */
+    /* width: 85%; */
+}
+
+.sign-up-button a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 16px;
+    border-radius: 8px;
+}
+
+.sign-up-button a:hover {
+    /* border: 1px solid #1a83ff;
+    color: #1a83ff; */
+    transition: 350ms;
+    background-color: #1a83ff;
+    
+}
+
+
+/* Log-In Button */
+.log-in-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    list-style: none;
+    margin: 0.5em;
+    height: 60px;
+    border: 2px;
+    /* align-content: flex-end; */
+    /* width: 85%; */
+}
+
+.log-in-button a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 16px;
+    border-radius: 5px;
+    transition: 250ms;
+}
+
+.log-in-button a:hover {
+    /* border: 1px solid #34d379; */
+    background-color: #2ca15f;
+    
+}
+
+/* LOG-OUT BUTTON */
+.log-out-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    list-style: none;
+    height: 60px;
+    margin: 0.5em;
+    /* align-content: flex-end; */
+    /* width: 85%; */
+}
+
+.log-out-button a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 16px;
+    border-radius: 8px;
+}
+
+.log-out-button a:hover {
+    background-color: #a11616;
+    color: white;
+    
+}
