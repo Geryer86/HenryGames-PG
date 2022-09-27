@@ -15,7 +15,7 @@ import swal from "sweetalert";
 import './home.css'
 import './carousel.css'
 
-const BACK_URL = process.env.REACT_APP_API || "http://localhost:3001";
+const BACK_HEROKU = process.env.REACT_APP_API || "http://localhost:3001";
 
 export default function Home() {
 
@@ -34,7 +34,7 @@ export default function Home() {
         const getUser = async () => {
             console.log("entró al getUser()")
             try {
-                const info = await fetch(`${BACK_URL}/auth/google/protected`,
+                const info = await fetch(`${BACK_HEROKU}/auth/google/protected`,
                 //const info = await fetch(`auth/google/protected`,
                     {
                         method: 'GET',

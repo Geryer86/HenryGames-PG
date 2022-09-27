@@ -7,13 +7,15 @@ const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-local").Strategy;
 const { Player } = require('./db');
-const { SECRET, BASE_URL, BACK_URL } = process.env
+const { SECRET } = process.env
 const bcrypt = require("bcrypt")
 const randomstring = require("randomstring");
 
 const server = express()
 
 server.name = 'API';
+
+const urlFlamaFront = process.env.BASE_URL || 'http://localhost:3000';
 
 // -------------------  MIDDLEWARES------------- cambio
 
@@ -25,7 +27,7 @@ server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser(SECRET));
 server.use(morgan('dev'));
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', `${BASE_URL}`); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Origin', `${urlFlamaFront}`); // update to match the domain you will make the request from
   res.header('Access-Control-Allow-Credentials', 'true');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
@@ -69,12 +71,13 @@ passport.use(
 
 const GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;
 
+const urlFlama = process.env.BACK_URL || 'http://localhost:3001';
 
 passport.use(new GoogleStrategy({
     clientID: process.env['GOOGLE_CLIENT_ID'],
     clientSecret: process.env['GOOGLE_CLIENT_SECRET'],
     //callbackURL: `/auth/google/callback`,
-    callbackURL: `${BACK_URL}/auth/google/callback`,
+    callbackURL: `${urlFlama}/auth/google/callback`,
     passReqToCallback: true
   },
   async function(request, accessToken, refreshToken, profile, done) {

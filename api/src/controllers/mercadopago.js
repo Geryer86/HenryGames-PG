@@ -6,7 +6,9 @@ const randomstring = require("randomstring");
 //SDK mercadopago
 const mercadopago = require('mercadopago');
 
-const { ACCESS_TOKEN_MP, BACK_URL, BASE_URL } = process.env;
+const { ACCESS_TOKEN_MP } = process.env;
+
+const urlFlama = process.env.BACK_URL || 'http://localhost:3001';
 
 //agrega credenciales
 mercadopago.configure({
@@ -41,9 +43,9 @@ let preference = {
         installments: 3 //cuotas
     },
     "back_urls": {
-        "success": `${BACK_URL}/mercadopago/save_data`, 
-        "failure": `${BACK_URL}/mercadopago/failure`,    
-        "pending": `${BACK_URL}/mercadopago/pending`
+        "success": `${urlFlama}/mercadopago/save_data`, 
+        "failure": `${urlFlama}/mercadopago/failure`,    
+        "pending": `${urlFlama}/mercadopago/pending`
     },
 };
 
@@ -119,7 +121,7 @@ router.get('/save_data', async(req, res) => {  // usar un switch
     
 
 
-    res.redirect(`${BACK_URL}/authentication/email/gameActivation/${secret_code}/${id_user}/${longitude}`)
+    res.redirect(`${urlFlama}/authentication/email/gameActivation/${secret_code}/${id_user}/${longitude}`)
 })
 
 router.get("/failure", async (req, res) =>{
