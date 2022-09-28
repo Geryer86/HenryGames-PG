@@ -8,7 +8,9 @@ dotenv.config();
 export default function GoogleBtn({type}) {
 
     const hk_URL = "https://henrygames.herokuapp.com"
+    
     const BACK_HEROKU = process.env.REACT_APP_API || "http://localhost:3001";
+    
     const google = () => {
         window.location.href = `${BACK_HEROKU}/auth/google`
     }

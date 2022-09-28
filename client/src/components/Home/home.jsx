@@ -56,9 +56,9 @@ export default function Home() {
                     }
                     else throw new Error ("authentication has failed")
                 }).then((resObj) => {
-                    console.log("terminó el axios ")
+                    console.log(resObj + "terminó el axios")
                     if (resObj.success) {
-                        console.log(resObj+ " if 200")
+                        console.log(resObj + "if 200")
                         localStorage.setItem("id", resObj.user.id)
                         localStorage.setItem('name', resObj.user.name)
                         localStorage.setItem('lastname', resObj.user.lastname)
