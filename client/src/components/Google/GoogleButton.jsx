@@ -1,5 +1,5 @@
 import React from "react";
-//import GoogleButton from 'react-google-button';
+import GoogleButton from 'react-google-button';
 import GoogleLogin from 'react-google-login';
 import axios from "axios";
 import dotenv from "dotenv";
@@ -22,18 +22,18 @@ export default function GoogleBtn({type}) {
     
     return (
         <fragment>
-            <GoogleLogin
+            {/* <GoogleLogin
                 clientId="1068714746325-oo9eg04cqgvfljp14dgjrbgaego7osqp.apps.googleusercontent.com"
                 buttonText="Login"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
                 cookiePolicy={'single_host_origin'}
-            />
-            {/* <GoogleButton
+            /> */}
+            <GoogleButton
                 type={type}
                 label='Log in with Google'
                 onClick={() => {google()}}
-            /> */}
+            />
         </fragment>
     )
 }

@@ -34,21 +34,25 @@ export default function Home() {
         const getUser = async () => {
             console.log("entró al getUser()")
             try {
-                const info = await axios(
+                const info = await fetch(`${BACK_HEROKU}/auth/google/protected`,
+                //const info = await fetch(`auth/google/protected`,
                     {
-                        url: `auth/google/protected`,
                         method: 'GET',
                         credentials: 'include',
-                        headers: { "X-Requested-With": "XMLHttpRequest" },
+                        header: {
+                            Accept: 'application/json',
+                            'Content-Type': 'application/json',
+                            'Access-Control-Allow-Credentials': true,
+                        }
                     }
                 ).then((res) => {
                     if (res.status===200) {
                         console.log(res.json, 'entro al 200')
-                        //return res.json()
+                        return res.json()
                     }
                     else if(res.status===401) {
                         console.log(res, 'entro al 401')
-                        //return res.json()
+                        return res.json()
                     }
                     else throw new Error ("authentication has failed")
                 }).then((resObj) => {
