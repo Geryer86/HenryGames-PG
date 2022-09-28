@@ -48,11 +48,11 @@ export default function Home() {
                 ).then((res) => {
                     if (res.status===200) {
                         console.log(res.json, 'entro al 200')
-                        return res.json()
+                        //return res.json()
                     }
                     else if(res.status===401) {
                         console.log(res, 'entro al 401')
-                        return res.json()
+                        //return res.json()
                     }
                     else throw new Error ("authentication has failed")
                 }).then((resObj) => {
