@@ -18,6 +18,7 @@ export default function GoogleBtn({type}) {
     return (
         <fragment>
             <GoogleButton
+                clientId="1068714746325-oo9eg04cqgvfljp14dgjrbgaego7osqp.apps.googleusercontent.com"
                 type={type}
                 label='Log in with Google'
                 onClick={() => {google()}}
